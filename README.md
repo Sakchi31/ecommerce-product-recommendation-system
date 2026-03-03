@@ -2,21 +2,21 @@
 
 This project is a Content-Based Recommendation System built using Python and Machine Learning techniques.
 
-##  Project Overview
+## Project Overview
 The system recommends similar products based on product features like:
-- Brand
+- Brand of the product
 - Season
-- Geography
+- Geographical locations
 - Gender
 
 It uses TF-IDF Vectorization and Cosine Similarity to calculate similarity between products.
 
-##  Technologies Used
+## Technologies Used
 - Python
 - Pandas
 - Scikit-learn
 
-##  Project Structure
+## Project Structure
 ecommerce-product-recommendation-system
 │
 ├── content_based_recommendation_dataset.csv
@@ -24,14 +24,14 @@ ecommerce-product-recommendation-system
 ├── requirements.txt
 └── README.md
 
-##  How to Run
+## How to Run
 1. Install dependencies:
    pip install -r requirements.txt
 
 2. Run the project:
    python main.py
 
-##  Future Improvements
+## Future Improvements
 - Add Streamlit web interface
 - Improve recommendation accuracy
 - Deploy the project online
