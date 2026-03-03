@@ -5,11 +5,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load dataset
 df = pd.read_csv("content_based_recommendation_dataset.csv")
 
-# Combine selected features
+# Combine correct columns
 df["combined_features"] = (
-    df["Brand"].astype(str) + " " +
+    df["Brand of the product"].astype(str) + " " +
     df["Season"].astype(str) + " " +
-    df["Geography"].astype(str) + " " +
+    df["Geographical locations"].astype(str) + " " +
     df["Gender"].astype(str)
 )
 
@@ -26,7 +26,7 @@ def recommend(product_index):
 
     print("\nRecommended Products:\n")
     for i in scores[1:6]:
-        print(df.iloc[i[0]]["Brand"])
+        print(df.iloc[i[0]]["Brand of the product"])
 
 # Example
 recommend(0)
