@@ -29,8 +29,11 @@ ecommerce-product-recommendation-system
 1. Install dependencies:
    pip install -r requirements.txt
 
-2. Run the project:
+2. Run Terminal Version:
    python main.py
+
+3. Run Web App Version (Streamlit):
+   streamlit run app.py
 
 ## Future Improvements
 - Add Streamlit web interface
